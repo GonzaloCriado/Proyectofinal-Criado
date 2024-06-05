@@ -1,33 +1,36 @@
+@charset "UTF-8";
 
-
-html body{
+html body {
     margin: 0%;
     padding: 0%;
     background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:inherit ;
+    background-position: inherit;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
 }
-h1{
+
+h1 {
     color: black;
-    text-align:right;
+    text-align: right;
     display: inline;
     position: absolute;
     opacity: 0;
 }
-.header-inicio{
+
+.header-inicio {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     background-color: black;
 }
-.barra-menu{
+
+.barra-menu {
     position: relative;
     top: 0%;
     left: 50%;
@@ -40,11 +43,12 @@ h1{
     text-decoration-line: none;
     list-style-type: none;
     font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     height: 30px;
     background-color: transparent;
 }
-.enlace-menu{
+
+.enlace-menu {
     margin: 0;
     text-decoration: none;
     color: darkgoldenrod;
@@ -53,75 +57,93 @@ h1{
     margin-top: 0;
     background-color: transparent;
 }
-.contenedor-tituloprincipal{
+
+.contenedor-tituloprincipal {
     display: flex;
     flex-direction: column;
 }
-.tituloprincipal{
-    font-family:"Sedan SC";
+
+.tituloprincipal {
+    font-family: "Sedan SC";
     opacity: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-self: center;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     color: darkgoldenrod;
     /* margin-left: 400px;
-    margin-right: 400px; */
+  margin-right: 400px; */
     letter-spacing: 5px;
     font-size: 50px;
     text-transform: uppercase;
-    text-shadow: 1px 10px 20px rgba(184, 134, 11, 100);
+    text-shadow: 1px 10px 20px rgb(184, 134, 11);
 }
-.contenedor-publicidad{
+
+.contenedor-publicidad {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
     justify-items: center;
     justify-content: space-around;
-    grid-template-areas:"publicidad1 publicidad3 publicidad2"
-                        "publicidad4 publicidad5 publicidad6";
-    
+    grid-template-areas: "publicidad1 publicidad3 publicidad2" "publicidad4 publicidad5 publicidad6";
 }
-.publicidadinicial{
-list-style-type: none;
-justify-self: center;
+
+.publicidadinicial {
+    list-style-type: none;
+    justify-self: center;
 }
-.publicidad1{
+
+.publicidad1 {
     grid-area: publicidad1;
-} .publicidad2{
+}
+
+.publicidad2 {
     grid-area: publicidad2;
-} .publicidad3{
+}
+
+.publicidad3 {
     grid-area: publicidad3;
-} .publicidad4{
+}
+
+.publicidad4 {
     grid-area: publicidad3;
-} .publicidad5{
+}
+
+.publicidad5 {
     grid-area: publicidad5;
-} .publicidad6{
+}
+
+.publicidad6 {
     grid-area: publicidad6;
 }
-.fotopublicidad{
+
+.fotopublicidad {
     width: 400px;
 }
-.contenedor-flecha{
+
+.contenedor-flecha {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.flecha{
+
+.flecha {
     width: 150px;
-    display:block;
+    display: block;
 }
-.contenedordepromosydescuentos{
+
+.contenedordepromosydescuentos {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.promosydescuentos{
-    font-family:"Sedan SC";
+
+.promosydescuentos {
+    font-family: "Sedan SC";
     justify-content: center;
     align-items: center;
     color: white;
@@ -133,7 +155,8 @@ justify-self: center;
     margin-left: 10%;
     margin-right: 10%;
 }
-.tickets{
+
+.tickets {
     width: 100%;
     background-color: #b8860b;
     display: flex;
@@ -142,23 +165,23 @@ justify-self: center;
     justify-content: center;
     align-items: center;
 }
-.imagentickets{
-    width: 960px;
 
+.imagentickets {
+    width: 960px;
 }
-.contenedor-hacetesocio{
+
+.contenedor-hacetesocio {
     background-color: black;
     width: 100%;
     height: 400px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 40% 40%;
-    grid-template-areas: "hacetesocio hacetesocio"
-                        "textohacetesocio textohacetesocio"
-                        "mb-3 botonsuscribirse";
-                        column-gap: 20px;
+    grid-template-areas: "hacetesocio hacetesocio" "textohacetesocio textohacetesocio" "mb-3 botonsuscribirse";
+    column-gap: 20px;
 }
-.hacetesocio{
+
+.hacetesocio {
     grid-area: hacetesocio;
     background-color: black;
     color: red;
@@ -168,9 +191,10 @@ justify-self: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
-.textohacetesocio{
+
+.textohacetesocio {
     grid-area: textohacetesocio;
-    font-family:"Pantalla mono principal";
+    font-family: "Pantalla mono principal";
     color: white;
     font-size: 40px;
     text-align: center;
@@ -178,6 +202,7 @@ justify-self: center;
     background-color: black;
     letter-spacing: 5px;
 }
+
 /* .formulario{
     display:flex;
     flex-direction: row;
@@ -186,19 +211,20 @@ justify-self: center;
     align-items: stretch;
     margin: 20px;
 } */
-.mb-3{
+.mb-3 {
     grid-area: mb-3;
     align-self: center;
     justify-self: end;
     width: 350px;
-    
 }
-.botonsuscribirse{
+
+.botonsuscribirse {
     grid-area: botonsuscribirse;
     align-self: center;
     justify-self: start;
 }
-#suscribirse{
+
+#suscribirse {
     width: 300px;
     height: 35px;
     font-size: 18px;
@@ -208,104 +234,107 @@ justify-self: center;
     border-radius: 5px;
 }
 
-
-
-
-.piedepagina{
+.piedepagina {
     background-color: white;
     width: 100%;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 40% 20% 40%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "contenedor-descriptivo contenedor-logowhatsapp numerodetelefono"
-                        "contenedor-descriptivo contenedor-logoinstagram nombredeusuario"
-                        "footer-inicio footer-inicio footer-inicio";
+    grid-template-areas: "contenedor-descriptivo contenedor-logowhatsapp numerodetelefono" "contenedor-descriptivo contenedor-logoinstagram nombredeusuario" "footer-inicio footer-inicio footer-inicio";
     justify-content: stretch;
 }
-.contenedor-descriptivo{
-grid-area: contenedor-descriptivo;
-text-align: justify;
-font-size: 20px;
-margin-left: 20px;
-margin-right: 20px;
+
+.contenedor-descriptivo {
+    grid-area: contenedor-descriptivo;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.quienessomos{
+
+.quienessomos {
     font-family: "Pantalla mono principal";
-text-align: center;
+    text-align: center;
     font-size: 30px;
 }
-.textodescriptivo{
+
+.textodescriptivo {
     text-align: justify;
     width: 30%;
 }
-.contenedor-logowhatsapp{
+
+.contenedor-logowhatsapp {
     grid-area: contenedor-logowhatsapp;
     justify-self: end;
 }
-.contenedor-logoinstagram{
+
+.contenedor-logoinstagram {
     grid-area: contenedor-logoinstagram;
     justify-self: end;
     margin-right: 25px;
 }
-.numerodetelefono{
+
+.numerodetelefono {
     grid-area: numerodetelefono;
     text-decoration: underline;
     align-self: center;
 }
-.nombredeusuario{
+
+.nombredeusuario {
     grid-area: nombredeusuario;
     text-decoration: underline;
     align-self: center;
 }
-a{
+
+a {
     color: black;
 }
-.logowhatsapp{
+
+.logowhatsapp {
     height: 100px;
 }
-.logoinstagram{
+
+.logoinstagram {
     height: 100px;
 }
-.footer-inicio{
+
+.footer-inicio {
     grid-area: footer-inicio;
     display: flex;
     flex-direction: column;
     background-color: #000000;
 }
-.navfooterinicio{
+
+.navfooterinicio {
     color: white;
     text-align: center;
 }
 
 /* Aca empieza el css de la pagina de ¨Cortes¨ */
-.contenedor-padre{
-    display:grid;
+.contenedor-padre {
+    display: grid;
     grid-template-columns: 25% 50% auto;
     grid-template-rows: 15% 10% 70%;
-    grid-template-areas: "header-cortes header-cortes header-cortes"
-                        "nav cortesvillanos cortesvillanos"
-                        "nav cortes lemacortes";
+    grid-template-areas: "header-cortes header-cortes header-cortes" "nav cortesvillanos cortesvillanos" "nav cortes lemacortes";
 }
 
-
-
-.header-cortes{
+.header-cortes {
     grid-area: header-cortes;
     height: 200px;
-    }
+}
 
-    .contenedor-imagen{
-        flex-shrink: 10px;
-        height: 200px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        background-color: black;
-    }
+.contenedor-imagen {
+    flex-shrink: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
 
-.cortesvillanos{
+.cortesvillanos {
     grid-area: cortesvillanos;
     display: flex;
     flex-direction: column;
@@ -313,14 +342,14 @@ a{
     align-items: center;
     text-align: center;
     height: 100px;
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: darkgoldenrod;
     letter-spacing: 5px;
     font-size: 50px;
-    font-family:"Sedan SC" ;
+    font-family: "Sedan SC";
 }
 
-.cortes{
+.cortes {
     grid-area: cortes;
     width: 100%;
     background-color: #000000;
@@ -329,7 +358,7 @@ a{
     overflow: hidden;
 }
 
-.lemacortes{
+.lemacortes {
     grid-area: lemacortes;
     display: flex;
     flex-direction: column;
@@ -339,22 +368,24 @@ a{
     background-color: #000000;
     border-right: 20px;
 }
-.lema{
-    font-family:"Sedan SC";
+
+.lema {
+    font-family: "Sedan SC";
     font-size: 55px;
     text-align: center;
     letter-spacing: 5px;
     color: white;
     flex-wrap: nowrap;
 }
-.nav{
+
+.nav {
     grid-area: nav;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.barra-menu-cortes{
+.barra-menu-cortes {
     list-style-type: none;
     position: fixed;
     margin-top: 0px;
@@ -362,7 +393,8 @@ a{
     height: 100%;
     padding-top: 0;
 }
-.barra-menu-cortes1{
+
+.barra-menu-cortes1 {
     padding: 20px;
     border-top: 10px;
     background-color: darkgoldenrod;
@@ -372,27 +404,33 @@ a{
     text-align: center;
     font-weight: bold;
 }
-.enlace-menu-izquierda{
-    color:black;
+
+.enlace-menu-izquierda {
+    color: black;
     text-decoration: none;
     text-align: center;
     padding: 20px;
 }
-.footer{
+
+.footer {
     background-color: #000000;
 }
-.textofooter{
+
+.textofooter {
     color: white;
     text-align: center;
 }
-.navfootercortes{
+
+.navfootercortes {
     color: white;
     text-align: center;
 }
-.listafooter{
+
+.listafooter {
     list-style-type: none;
 }
-.enlacesfooter{
+
+.enlacesfooter {
     color: white;
 }
 
@@ -401,27 +439,24 @@ a{
         display: grid;
         height: 100vh;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 5% 10% 50% auto auto; 
-        grid-template-areas: 
-        "header-cortes"
-        "nav"
-        "cortesvillanos"
-        "cortes"
-        "lemacortes"
-        "footer";
+        grid-template-rows: 10% 5% 10% 50% auto auto;
+        grid-template-areas: "header-cortes" "nav" "cortesvillanos" "cortes" "lemacortes" "footer";
     }
-    .header-cortes{
+
+    .header-cortes {
         grid-area: header-cortes;
         text-align: center;
         display: flex;
         flex-direction: column;
     }
-    .imagenlogo-cortes{
+
+    .imagenlogo-cortes {
         height: 100px;
         align-self: center;
         justify-self: center;
     }
-    .contenedor-imagen{
+
+    .contenedor-imagen {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -429,10 +464,11 @@ a{
         background-color: black;
         overflow: hidden;
     }
+
     .nav {
         grid-area: nav;
     }
-    
+
     .barra-menu-cortes {
         list-style-type: none;
         padding: 0;
@@ -442,7 +478,7 @@ a{
         position: relative;
         align-self: center;
     }
-    
+
     .barra-menu-cortes1 {
         width: 150px;
         height: 50px;
@@ -451,7 +487,7 @@ a{
         background-color: darkgoldenrod;
         font-weight: bold;
     }
-    
+
     .enlace-menu-izquierda {
         color: black;
         text-decoration: none;
@@ -466,7 +502,8 @@ a{
         align-items: center;
         background-color: black;
     }
-    .lemacortes{
+
+    .lemacortes {
         grid-area: lemacortes;
         display: flex;
         flex-direction: column;
@@ -476,51 +513,56 @@ a{
         background-color: #000000;
         border-right: 20px;
     }
-    .lema{
-        font-family:"Sedan SC";
+
+    .lema {
+        font-family: "Sedan SC";
         font-size: 20px;
         text-align: center;
         letter-spacing: 2px;
         color: white;
     }
-    .footer{
+
+    .footer {
         grid-area: footer;
         background-color: #000000;
     }
-    .textofooter{
+
+    .textofooter {
         color: white;
         text-align: center;
-    }
-    .navfootercortes{
-        color: white;
-        text-align: center;
-    }
-    .listafooter{
-        list-style-type: none;
-    }
-    .enlacesfooter{
-        color: white;
-    }
     }
 
+    .navfootercortes {
+        color: white;
+        text-align: center;
+    }
+
+    .listafooter {
+        list-style-type: none;
+    }
+
+    .enlacesfooter {
+        color: white;
+    }
+}
+
 /* Aca empieza el css de la pagina de ¨Turnos¨ */
-.body{
+.body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
-.contenedorpadre{
+
+.contenedorpadre {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 100vh;
     gap: 10px;
-    grid-template-areas: "header header"
-                        "menuturnos section"
-                        "menuturnos section"
-                        "menuturnos section";
+    grid-template-areas: "header header" "menuturnos section" "menuturnos section" "menuturnos section";
 }
-.header{
+
+.header {
     grid-area: header;
     height: 200px;
     display: flex;
@@ -529,13 +571,16 @@ a{
     align-content: center;
     background-color: black;
 }
-.imagenlogo-turnos{
+
+.imagenlogo-turnos {
     height: 200px;
 }
-.menuturnos{
+
+.menuturnos {
     grid-area: menuturnos;
 }
-.section{
+
+.section {
     grid-area: section;
     display: flex;
     flex-direction: column;
@@ -544,44 +589,42 @@ a{
     background-color: darkgoldenrod;
 }
 
-.row{
+.row {
     background-color: #b8860b;
     width: 100vh;
     border-radius: 10px;
     opacity: 95%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(1fr,5);
-    grid-template-areas: "titulopaginaturnos titulopaginaturnos"
-                        "nombrecompleto nombrecompleto"
-                        "calendario calendario"
-                        "horarios disponibles horarios disponibles"
-                        "contenedor-botonenviar contenedor-botonenviar";
-                        justify-content: center;
-                        align-content: center;
+    grid-template-rows: repeat(1fr, 5);
+    grid-template-areas: "titulopaginaturnos titulopaginaturnos" "nombrecompleto nombrecompleto" "calendario calendario" "horarios disponibles horarios disponibles" "contenedor-botonenviar contenedor-botonenviar";
+    justify-content: center;
+    align-content: center;
 }
-.titulopaginaturnos{
-grid-area: titulopaginaturnos;
-text-align: center;
+
+.titulopaginaturnos {
+    grid-area: titulopaginaturnos;
+    text-align: center;
 }
-.titulo-turnos{
+
+.titulo-turnos {
     font-family: "Pantalla mono principal";
-    background-color:rgb(248, 248, 248);
+    background-color: rgb(248, 248, 248);
     color: black;
     padding: 40px;
     font-size: 35px;
     margin: 20px;
-
     border-radius: 20px;
     text-align: center;
     align-self: center;
     justify-self: center;
 }
-.nombrecompleto{
-padding: 50px;
+
+.nombrecompleto {
+    padding: 50px;
 }
 
-.calendario{
+.calendario {
     padding: 10px;
     margin-bottom: 20px;
     background-color: rgb(250, 248, 248);
@@ -591,19 +634,23 @@ padding: 50px;
     justify-content: end;
     align-content: end;
 }
-.calendario1{
+
+.calendario1 {
     color: #000000;
     font-size: larger;
 }
-.contenedortitulodehorarios{
+
+.contenedortitulodehorarios {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.horariodisponible{
+
+.horariodisponible {
     font-family: "Pantalla mono principal";
 }
-.horariodisponibletitulo{
+
+.horariodisponibletitulo {
     font-weight: bold;
     background-color: white;
     width: 60%;
@@ -611,20 +658,23 @@ padding: 50px;
     border-color: #000000;
     border-radius: 20px;
 }
-.subrayado{
+
+.subrayado {
     text-decoration: underline;
     font-weight: bold;
     font-size: 20px;
 }
-.contenedor-horarios{
+
+.contenedor-horarios {
     /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "columna1 columna2"; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "columna1 columna2"; */
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:50%;
+    gap: 50%;
 }
+
 /* .columna1{
     grid-area: columna1;
     display: flex;
@@ -635,36 +685,41 @@ padding: 50px;
     display: flex;
     flex-direction: column;
 } */
-.viñetas{
+.viñetas {
     list-style-type: none;
 }
-.footer-turnos{
+
+.footer-turnos {
     grid-area: footer-turnos;
     display: flex;
     flex-direction: row;
     text-align: center;
     background-color: aqua;
 }
-.contenedor-botonenviar{
+
+.contenedor-botonenviar {
     display: flex;
     flex-direction: column;
 }
-.boton-enviar{
+
+.boton-enviar {
     background-color: #000000;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 20px; 
+    font-size: 20px;
     /* cursor: pointer; */
     font-weight: bold;
 }
-.menuturnos{
+
+.menuturnos {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.barra-menu-turnos{
+
+.barra-menu-turnos {
     list-style-type: none;
     position: fixed;
     margin-top: 0px;
@@ -672,7 +727,8 @@ padding: 50px;
     height: 100%;
     padding-top: 0;
 }
-.barra-menu-turnos1{
+
+.barra-menu-turnos1 {
     padding: 20px;
     border-top: 10px;
     background-color: darkgoldenrod;
@@ -682,12 +738,16 @@ padding: 50px;
     text-align: center;
     font-weight: bold;
 }
-.enlace-menu-turnos{
-    color:black;
+
+.enlace-menu-turnos {
+    color: black;
     text-decoration: none;
     text-align: center;
     padding: 20px;
 }
-.calendario1:required{
-    box-shadow:10px red;
+
+.calendario1:required {
+    box-shadow: 10px red;
 }
+
+/*# sourceMappingURL=styles.css.map */

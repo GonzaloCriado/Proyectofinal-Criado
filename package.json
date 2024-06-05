@@ -1,0 +1,29 @@
+{
+  "name": "preentrega3-criado",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto aplicando y  usando SASS.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloCriado/PreEntrega2-Criado.git"
+  },
+  "keywords": [
+    "barberia",
+    "pagina",
+    "de",
+    "barberia",
+    "proyecto",
+    "de",
+    "barberia",
+    "cortes"
+  ],
+  "author": "Gonzalo Criado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloCriado/PreEntrega2-Criado/issues"
+  },
+  "homepage": "https://github.com/GonzaloCriado/PreEntrega2-Criado#readme"
+}
