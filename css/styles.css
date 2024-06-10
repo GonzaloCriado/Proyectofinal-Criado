@@ -389,102 +389,6 @@ a {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-  .contenedor-padre {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 5% 10% 50% auto auto;
-    grid-template-areas: "header-cortes" "nav" "cortesvillanos" "cortes" "lemacortes" "footer";
-  }
-  .header-cortes {
-    grid-area: header-cortes;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .imagenlogo-cortes {
-    height: 100px;
-    align-self: center;
-    justify-self: center;
-  }
-  .contenedor-imagen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
-    overflow: hidden;
-  }
-  .nav {
-    grid-area: nav;
-  }
-  .barra-menu-cortes {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-self: center;
-  }
-  .barra-menu-cortes1 {
-    width: 150px;
-    height: 50px;
-    padding: 1px;
-    border-top: 10px;
-    background-color: darkgoldenrod;
-    font-weight: bold;
-  }
-  .enlace-menu-izquierda {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-    align-self: center;
-  }
-  .contenedor-imagen {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-  }
-  .lemacortes {
-    grid-area: lemacortes;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    justify-content: space-evenly;
-    background-color: #000000;
-    border-right: 20px;
-  }
-  .lema {
-    font-family: "Sedan SC";
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-    color: white;
-  }
-  .footer {
-    grid-area: footer;
-    background-color: #000000;
-  }
-  .textofooter {
-    color: white;
-    text-align: center;
-  }
-  .navfootercortes {
-    color: white;
-    text-align: center;
-  }
-  .listafooter {
-    list-style-type: none;
-  }
-  .enlacesfooter {
-    color: white;
-  }
-}
 /* Aca empieza el css de la pagina de ¨Turnos¨ */
 .body {
   margin: 0;
@@ -729,7 +633,7 @@ a {
     background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Ajustar la altura al 100% del viewport */
+    height: 100vh;
     width: 100%;
     overflow-x: hidden;
   }
@@ -770,7 +674,7 @@ a {
   .enlace-menu {
     background-color: #000000;
     color: #b8860b;
-    text-align: center; /* Centra el texto */
+    text-align: center;
   }
   .contenedor-tituloprincipal,
   .contenedor-publicidad {
@@ -973,6 +877,128 @@ a {
   .navfooterinicio {
     color: white;
     text-align: center;
+  }
+  .contenedor-beneficios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulobeneficios" "beneficio1" "beneficio2";
+    gap: 5px;
+  }
+  .titulobeneficios {
+    grid-area: titulobeneficios;
+    align-self: center;
+    justify-self: center;
+    background-color: #000000;
+    padding: 20px;
+    margin: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .beneficios {
+    color: darkgoldenrod;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+  .beneficio1 {
+    grid-area: beneficio1;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .beneficio2 {
+    grid-area: beneficio2;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .titulobeneficio1 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio1 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .titulobeneficio2 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio2 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .listabeneficios {
+    text-align: left;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulodeservicios" "imagenservicios";
+    gap: 5px;
+  }
+  .titulodeservicios {
+    grid-area: titulodeservicios;
+    background-color: #000000;
+    padding: 20px;
+    color: #b8860b;
+    text-align: center;
+    font-size: 80px;
+  }
+  .imagenservicios {
+    grid-area: imagenservicios;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    background-color: #b8860b;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .contenedor-padre {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 20%;
+    grid-template-areas: "cortesvillanos" "cortes" "lemacortes" "footer";
+    gap: 5px;
+  }
+  .lemacortes {
+    grid-area: lemacortes;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+    border-right: 20px;
+  }
+  .lema {
+    font-family: "Sedan SC";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #000000;
+  }
+  .textofooter {
+    color: white;
+    text-align: center;
+  }
+  .navfootercortes {
+    color: white;
+    text-align: center;
+  }
+  .listafooter {
+    list-style-type: none;
+  }
+  .enlacesfooter {
+    color: white;
   }
 }
 
