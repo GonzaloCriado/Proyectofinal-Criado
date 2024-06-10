@@ -1,0 +1,1 @@
+Es un proyecto que tengo de una barberia de mi propiedad, donde tengo unna pagina de instagram de ella y mi numero de telefono, trabajo en ella y se me ocurrio hacer un sitio web para el credimienot de mi barberia.
