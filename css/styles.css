@@ -303,13 +303,13 @@ a {
 /* Aca empieza el css de la pagina de ¨Cortes¨ */
 .contenedor-padre {
   display: grid;
-  grid-template-columns: 25% 50% auto;
-  grid-template-rows: 15% 10% 70%;
-  grid-template-areas: "header-cortes header-cortes header-cortes" "nav cortesvillanos cortesvillanos" "nav cortes lemacortes";
+  grid-template-columns: 60% auto;
+  grid-template-rows: 10% 70%;
+  grid-template-areas: "cortesvillanos cortesvillanos" "cortes lemacortes";
 }
 
-.header-cortes {
-  grid-area: header-cortes;
+.header-inicio {
+  grid-area: header-inicio;
   height: 200px;
 }
 
@@ -365,40 +365,6 @@ a {
   letter-spacing: 5px;
   color: white;
   flex-wrap: nowrap;
-}
-
-.nav {
-  grid-area: nav;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.barra-menu-cortes {
-  list-style-type: none;
-  position: fixed;
-  margin-top: 0px;
-  margin-bottom: 200px;
-  height: 100%;
-  padding-top: 0;
-}
-
-.barra-menu-cortes1 {
-  padding: 20px;
-  border-top: 10px;
-  background-color: darkgoldenrod;
-  width: 250px;
-  height: 10%;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.enlace-menu-izquierda {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px;
 }
 
 .footer {
@@ -528,38 +494,28 @@ a {
 
 .contenedorpadre {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 100vh;
-  gap: 10px;
-  grid-template-areas: "header header" "menuturnos section" "menuturnos section" "menuturnos section";
+  grid-template-areas: "header-inicio" "section" "section" "section";
 }
 
-.header {
-  grid-area: header;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  background-color: black;
+.header-inicio {
+  grid-area: header-inicio;
 }
 
 .imagenlogo-turnos {
   height: 200px;
-}
-
-.menuturnos {
-  grid-area: menuturnos;
+  background-color: #000000;
 }
 
 .section {
   grid-area: section;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: darkgoldenrod;
+  align-self: center;
+  align-items: center;
+  background-color: #b8860b;
 }
 
 .row {
@@ -571,8 +527,8 @@ a {
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(1fr, 5);
   grid-template-areas: "titulopaginaturnos titulopaginaturnos" "nombrecompleto nombrecompleto" "calendario calendario" "horarios disponibles horarios disponibles" "contenedor-botonenviar contenedor-botonenviar";
-  justify-content: center;
-  align-content: center;
+  justify-self: center;
+  align-self: center;
 }
 
 .titulopaginaturnos {
@@ -672,39 +628,6 @@ a {
   font-weight: bold;
 }
 
-.menuturnos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.barra-menu-turnos {
-  list-style-type: none;
-  position: fixed;
-  margin-top: 0px;
-  margin-bottom: 200px;
-  height: 100%;
-  padding-top: 0;
-}
-
-.barra-menu-turnos1 {
-  padding: 20px;
-  border-top: 10px;
-  background-color: darkgoldenrod;
-  width: 250px;
-  height: 10%;
-  font-size: 25px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.enlace-menu-turnos {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  padding: 20px;
-}
-
 .calendario1:required {
   box-shadow: 10px red;
 }
@@ -772,6 +695,33 @@ a {
 
 .listabeneficios {
   text-align: left;
+}
+
+.contenedor-servicios {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "titulodeservicios" "imagenservicios";
+  gap: 10px;
+}
+
+.titulodeservicios {
+  grid-area: titulodeservicios;
+  background-color: #000000;
+  padding: 20px;
+  color: #b8860b;
+  text-align: center;
+  font-size: 80px;
+}
+
+.imagenservicios {
+  grid-area: imagenservicios;
+  height: 800px;
+  align-self: center;
+  justify-self: center;
+  background-color: #b8860b;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
