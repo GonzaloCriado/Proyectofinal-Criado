@@ -334,6 +334,10 @@ a {
   text-align: center;
 }
 
+.volver-arriba {
+  color: darkgoldenrod;
+}
+
 /* Aca empieza el css de la pagina de ¨Cortes¨ */
 .contenedor-padre {
   display: grid;
@@ -690,13 +694,12 @@ a {
     transform: scale(1.2);
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 375px) {
   html, body {
     background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100%;
     overflow-x: hidden;
   }
   h1 {
@@ -707,7 +710,7 @@ a {
     opacity: 0;
   }
   .imagenlogo-turnos {
-    height: 150px;
+    height: 100px;
     background-color: black;
   }
   .responsiveindex {
@@ -718,7 +721,6 @@ a {
   }
   .navresponsive {
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -732,12 +734,20 @@ a {
   }
   .barra-menu {
     display: flex;
-    padding-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: end;
+    margin-top: 20px;
   }
   .enlace-menu {
     background-color: black;
     color: darkgoldenrod;
+    padding: 10px;
+    width: 100%;
     text-align: center;
+    text-decoration: none;
   }
   .contenedor-tituloprincipal,
   .contenedor-publicidad {
@@ -817,13 +827,12 @@ a {
     width: 100%;
     background-color: darkgoldenrod;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
   .imagentickets {
-    width: 500px;
+    width: auto;
+    height: auto;
   }
   .contenedor-hacetesocio {
     background-color: black;
@@ -896,7 +905,7 @@ a {
   .contenedor-descriptivo {
     grid-area: contenedor-descriptivo;
     text-align: justify;
-    font-size: 20px;
+    font-size: 10px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -907,7 +916,7 @@ a {
   }
   .textodescriptivo {
     text-align: justify;
-    width: 30%;
+    width: 10%;
   }
   .contenedor-logowhatsapp {
     grid-area: contenedor-logowhatsapp;
@@ -924,21 +933,23 @@ a {
     text-decoration: underline;
     align-self: center;
     justify-self: center;
+    font-size: 20px;
   }
   .nombredeusuario {
     grid-area: nombredeusuario;
     text-decoration: underline;
     align-self: center;
+    font-size: 20px;
     justify-self: center;
   }
   a {
     color: black;
   }
   .logowhatsapp {
-    height: 90px;
+    height: 10px;
   }
   .logoinstagram {
-    height: 70px;
+    height: 30px;
   }
   .footer-inicio {
     grid-area: footer-inicio;
@@ -1171,6 +1182,1455 @@ a {
   .form-check-label {
     font-weight: bold;
     font-size: 20px;
+  }
+  .contenedor-botonenviar {
+    display: flex;
+    flex-direction: row;
+  }
+  .boton-enviar {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 375px) and (max-width: 576px) {
+  html, body {
+    background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: black;
+    text-align: right;
+    display: inline;
+    position: absolute;
+    opacity: 0;
+  }
+  .imagenlogo-turnos {
+    height: 150px;
+    background-color: black;
+  }
+  .responsiveindex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1% 99%;
+    grid-template-areas: "contenedor-tituloprincipal" "contenedor-publicidad";
+  }
+  .navresponsive {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+  }
+  .header-inicio {
+    grid-area: header-incio;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  .barra-menu {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .enlace-menu {
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+  }
+  .contenedor-tituloprincipal,
+  .contenedor-publicidad {
+    text-align: center;
+  }
+  .contenedor-publicidad {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1fr, 4);
+    gap: 20px;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-areas: "publicidad1" "publicidad4" "publicidad2" "publicidad5";
+  }
+  .publicidadinicial {
+    list-style-type: none;
+    justify-self: center;
+  }
+  .publicidad1 {
+    grid-area: publicidad1;
+  }
+  .publicidad2 {
+    grid-area: publicidad2;
+  }
+  .publicidad3 {
+    display: none;
+  }
+  .publicidad4 {
+    grid-area: publicidad3;
+  }
+  .publicidad5 {
+    grid-area: publicidad5;
+  }
+  .publicidad6 {
+    grid-area: publicidad6;
+  }
+  .fotopublicidad {
+    width: 300px;
+  }
+  .contenedor-flecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flecha {
+    width: 80px;
+    display: block;
+    animation: moverFlecha 2s infinite alternate;
+  }
+  @keyframes moverFlecha {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  .contenedordepromosydescuentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .promosydescuentos {
+    font-family: "Sedan SC";
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .tickets {
+    width: 100%;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagentickets {
+    width: 300px;
+  }
+  .contenedor-hacetesocio {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 10% 30%;
+    grid-template-areas: "hacetesocio" "textohacetesocio" "mb-3" "botonsuscribirse";
+    column-gap: 5px;
+  }
+  .hacetesocio {
+    grid-area: hacetesocio;
+    background-color: black;
+    color: red;
+    width: 200%;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: desplazar 3s linear infinite;
+  }
+  @keyframes desplazar {
+    100% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .textohacetesocio {
+    grid-area: textohacetesocio;
+    font-family: "Pantalla mono principal";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    letter-spacing: 5px;
+  }
+  .mb-3 {
+    grid-area: mb-3;
+    align-self: center;
+    justify-self: center;
+    width: 350px;
+  }
+  .botonsuscribirse {
+    grid-area: botonsuscribirse;
+    align-self: center;
+    justify-self: center;
+  }
+  #suscribirse {
+    width: 350px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 5px;
+  }
+  .piedepagina {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 5% 5% 20%;
+    grid-template-areas: "contenedor-descriptivo contenedor-descriptivo" "contenedor-logowhatsapp numerodetelefono" "contenedor-logoinstagram nombredeusuario" "footer-inicio footer-inicio";
+    justify-content: stretch;
+    gap: 5px;
+  }
+  .contenedor-descriptivo {
+    grid-area: contenedor-descriptivo;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .quienessomos {
+    font-family: "Pantalla mono principal";
+    text-align: center;
+    font-size: 20px;
+  }
+  .textodescriptivo {
+    text-align: justify;
+    font-size: 10px;
+  }
+  .contenedor-logowhatsapp {
+    grid-area: contenedor-logowhatsapp;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+  }
+  .contenedor-logoinstagram {
+    grid-area: contenedor-logoinstagram;
+    justify-self: center;
+  }
+  .numerodetelefono {
+    grid-area: numerodetelefono;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombredeusuario {
+    grid-area: nombredeusuario;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  a {
+    color: black;
+  }
+  .logowhatsapp {
+    height: 50px;
+  }
+  .logoinstagram {
+    height: 40px;
+  }
+  .footer-inicio {
+    grid-area: footer-inicio;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  .navfooterinicio {
+    color: white;
+    text-align: center;
+  }
+  .contenedor-beneficios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulobeneficios" "beneficio1" "beneficio2";
+    gap: 5px;
+  }
+  .titulobeneficios {
+    grid-area: titulobeneficios;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    padding: 20px;
+    margin: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .beneficios {
+    color: darkgoldenrod;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+  .beneficio1 {
+    grid-area: beneficio1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .beneficio2 {
+    grid-area: beneficio2;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .titulobeneficio1 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio1 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .titulobeneficio2 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio2 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .listabeneficios {
+    text-align: left;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulodeservicios" "imagenservicios";
+    gap: 5px;
+  }
+  .titulodeservicios {
+    grid-area: titulodeservicios;
+    background-color: black;
+    padding: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 80px;
+  }
+  .imagenservicios {
+    grid-area: imagenservicios;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    background-color: darkgoldenrod;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .contenedor-padre {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 20%;
+    grid-template-areas: "cortesvillanos" "cortes" "lemacortes" "footer";
+    gap: 5px;
+  }
+  .lemacortes {
+    grid-area: lemacortes;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-right: 20px;
+  }
+  .lema {
+    font-family: "Sedan SC";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: black;
+  }
+  .textofooter {
+    color: white;
+    text-align: center;
+  }
+  .navfootercortes {
+    color: white;
+    text-align: center;
+  }
+  .listafooter {
+    list-style-type: none;
+  }
+  .enlacesfooter {
+    color: white;
+  }
+  .contenedorpadre {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section" "footer";
+    gap: 5px;
+  }
+  .section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .titulopaginaturnos {
+    grid-area: titulopaginaturnos;
+    text-align: center;
+  }
+  .titulo-turnos {
+    font-family: "Pantalla mono principal";
+    background-color: rgb(248, 248, 248);
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombrecompleto {
+    padding: 20px;
+  }
+  .calendario {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .calendario1 {
+    color: black;
+    font-size: 20px;
+  }
+  .contenedortitulodehorarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .horariodisponible {
+    font-family: "Pantalla mono principal";
+  }
+  .horariodisponibletitulo {
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .subrayado {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .contenedor-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  .viñetas {
+    list-style-type: none;
+  }
+  .form-check-label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .contenedor-botonenviar {
+    display: flex;
+    flex-direction: row;
+  }
+  .boton-enviar {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 578px) and (max-width: 991px) {
+  html, body {
+    background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: black;
+    text-align: right;
+    display: inline;
+    position: absolute;
+    opacity: 0;
+  }
+  .imagenlogo-turnos {
+    height: 150px;
+    background-color: black;
+  }
+  .responsiveindex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1% 99%;
+    grid-template-areas: "contenedor-tituloprincipal" "contenedor-publicidad";
+  }
+  .navresponsive {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+  }
+  .header-inicio {
+    grid-area: header-incio;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  .barra-menu {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .enlace-menu {
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+  }
+  .contenedor-tituloprincipal,
+  .contenedor-publicidad {
+    text-align: center;
+  }
+  .contenedor-publicidad {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1fr, 4);
+    gap: 20px;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-areas: "publicidad1" "publicidad4" "publicidad2" "publicidad5";
+  }
+  .publicidadinicial {
+    list-style-type: none;
+    justify-self: center;
+  }
+  .publicidad1 {
+    grid-area: publicidad1;
+  }
+  .publicidad2 {
+    grid-area: publicidad2;
+  }
+  .publicidad3 {
+    display: none;
+  }
+  .publicidad4 {
+    grid-area: publicidad3;
+  }
+  .publicidad5 {
+    grid-area: publicidad5;
+  }
+  .publicidad6 {
+    grid-area: publicidad6;
+  }
+  .fotopublicidad {
+    width: 300px;
+  }
+  .contenedor-flecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flecha {
+    width: 80px;
+    display: block;
+    animation: moverFlecha 2s infinite alternate;
+  }
+  @keyframes moverFlecha {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  .contenedordepromosydescuentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .promosydescuentos {
+    font-family: "Sedan SC";
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .tickets {
+    width: 100%;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagentickets {
+    width: 600px;
+  }
+  .contenedor-hacetesocio {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 10% 30%;
+    grid-template-areas: "hacetesocio" "textohacetesocio" "mb-3" "botonsuscribirse";
+    column-gap: 5px;
+  }
+  .hacetesocio {
+    grid-area: hacetesocio;
+    background-color: black;
+    color: red;
+    width: 200%;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: desplazar 3s linear infinite;
+  }
+  @keyframes desplazar {
+    100% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .textohacetesocio {
+    grid-area: textohacetesocio;
+    font-family: "Pantalla mono principal";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    letter-spacing: 5px;
+  }
+  .mb-3 {
+    grid-area: mb-3;
+    align-self: center;
+    justify-self: center;
+    width: 350px;
+  }
+  .botonsuscribirse {
+    grid-area: botonsuscribirse;
+    align-self: center;
+    justify-self: center;
+  }
+  #suscribirse {
+    width: 350px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 5px;
+  }
+  .piedepagina {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 5% 5% 20%;
+    grid-template-areas: "contenedor-descriptivo contenedor-descriptivo" "contenedor-logowhatsapp numerodetelefono" "contenedor-logoinstagram nombredeusuario" "footer-inicio footer-inicio";
+    justify-content: stretch;
+    gap: 5px;
+  }
+  .contenedor-descriptivo {
+    grid-area: contenedor-descriptivo;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .quienessomos {
+    font-family: "Pantalla mono principal";
+    text-align: center;
+    font-size: 20px;
+  }
+  .textodescriptivo {
+    text-align: justify;
+    font-size: 10px;
+  }
+  .contenedor-logowhatsapp {
+    grid-area: contenedor-logowhatsapp;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+  }
+  .contenedor-logoinstagram {
+    grid-area: contenedor-logoinstagram;
+    justify-self: center;
+  }
+  .numerodetelefono {
+    grid-area: numerodetelefono;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombredeusuario {
+    grid-area: nombredeusuario;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  a {
+    color: black;
+  }
+  .logowhatsapp {
+    height: 50px;
+  }
+  .logoinstagram {
+    height: 40px;
+  }
+  .footer-inicio {
+    grid-area: footer-inicio;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  .navfooterinicio {
+    color: white;
+    text-align: center;
+  }
+  .contenedor-beneficios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulobeneficios" "beneficio1" "beneficio2";
+    gap: 5px;
+  }
+  .titulobeneficios {
+    grid-area: titulobeneficios;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    padding: 20px;
+    margin: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .beneficios {
+    color: darkgoldenrod;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+  .beneficio1 {
+    grid-area: beneficio1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .beneficio2 {
+    grid-area: beneficio2;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .titulobeneficio1 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio1 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .titulobeneficio2 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio2 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .listabeneficios {
+    text-align: left;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulodeservicios" "imagenservicios";
+    gap: 5px;
+  }
+  .titulodeservicios {
+    grid-area: titulodeservicios;
+    background-color: black;
+    padding: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 80px;
+  }
+  .imagenservicios {
+    grid-area: imagenservicios;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    background-color: darkgoldenrod;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .contenedor-padre {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 20%;
+    grid-template-areas: "cortesvillanos" "cortes" "lemacortes" "footer";
+    gap: 5px;
+  }
+  .lemacortes {
+    grid-area: lemacortes;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-right: 20px;
+  }
+  .lema {
+    font-family: "Sedan SC";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: black;
+  }
+  .textofooter {
+    color: white;
+    text-align: center;
+  }
+  .navfootercortes {
+    color: white;
+    text-align: center;
+  }
+  .listafooter {
+    list-style-type: none;
+  }
+  .enlacesfooter {
+    color: white;
+  }
+  .contenedorpadre {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section" "footer";
+    gap: 5px;
+  }
+  .section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .titulopaginaturnos {
+    grid-area: titulopaginaturnos;
+    text-align: center;
+  }
+  .titulo-turnos {
+    font-family: "Pantalla mono principal";
+    background-color: rgb(248, 248, 248);
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombrecompleto {
+    padding: 20px;
+  }
+  .calendario {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .calendario1 {
+    color: black;
+    font-size: 20px;
+  }
+  .contenedortitulodehorarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .horariodisponible {
+    font-family: "Pantalla mono principal";
+  }
+  .horariodisponibletitulo {
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .subrayado {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .contenedor-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  .viñetas {
+    list-style-type: none;
+  }
+  .form-check-label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .contenedor-botonenviar {
+    display: flex;
+    flex-direction: row;
+  }
+  .boton-enviar {
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  html, body {
+    background-image: url(../assets/multimedia/publicidad/fotodelvillan.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: black;
+    text-align: right;
+    display: inline;
+    position: absolute;
+    opacity: 0;
+  }
+  .imagenlogo-turnos {
+    height: 150px;
+    background-color: black;
+  }
+  .responsiveindex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1% 99%;
+    grid-template-areas: "contenedor-tituloprincipal" "contenedor-publicidad";
+  }
+  .navresponsive {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+  }
+  .header-inicio {
+    grid-area: header-incio;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  .barra-menu {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .enlace-menu {
+    background-color: black;
+    color: darkgoldenrod;
+    text-align: center;
+  }
+  .contenedor-tituloprincipal,
+  .contenedor-publicidad {
+    text-align: center;
+  }
+  .contenedor-publicidad {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1fr, 4);
+    gap: 20px;
+    justify-items: center;
+    justify-content: space-around;
+    grid-template-areas: "publicidad1" "publicidad4" "publicidad2" "publicidad5";
+  }
+  .publicidadinicial {
+    list-style-type: none;
+    justify-self: center;
+  }
+  .publicidad1 {
+    grid-area: publicidad1;
+  }
+  .publicidad2 {
+    grid-area: publicidad2;
+  }
+  .publicidad3 {
+    display: none;
+  }
+  .publicidad4 {
+    grid-area: publicidad3;
+  }
+  .publicidad5 {
+    grid-area: publicidad5;
+  }
+  .publicidad6 {
+    grid-area: publicidad6;
+  }
+  .fotopublicidad {
+    width: 300px;
+  }
+  .contenedor-flecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .flecha {
+    width: 80px;
+    display: block;
+    animation: moverFlecha 2s infinite alternate;
+  }
+  @keyframes moverFlecha {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+  .contenedordepromosydescuentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .promosydescuentos {
+    font-family: "Sedan SC";
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .tickets {
+    width: 100%;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagentickets {
+    width: 600px;
+  }
+  .contenedor-hacetesocio {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 10% 30%;
+    grid-template-areas: "hacetesocio" "textohacetesocio" "mb-3" "botonsuscribirse";
+    column-gap: 5px;
+  }
+  .hacetesocio {
+    grid-area: hacetesocio;
+    background-color: black;
+    color: red;
+    width: 200%;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation: desplazar 3s linear infinite;
+  }
+  @keyframes desplazar {
+    100% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  .textohacetesocio {
+    grid-area: textohacetesocio;
+    font-family: "Pantalla mono principal";
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    letter-spacing: 5px;
+  }
+  .mb-3 {
+    grid-area: mb-3;
+    align-self: center;
+    justify-self: center;
+    width: 350px;
+  }
+  .botonsuscribirse {
+    grid-area: botonsuscribirse;
+    align-self: center;
+    justify-self: center;
+  }
+  #suscribirse {
+    width: 350px;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid;
+    background-color: darkgoldenrod;
+    color: black;
+    border-radius: 5px;
+  }
+  .piedepagina {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 5% 5% 20%;
+    grid-template-areas: "contenedor-descriptivo contenedor-descriptivo" "contenedor-logowhatsapp numerodetelefono" "contenedor-logoinstagram nombredeusuario" "footer-inicio footer-inicio";
+    justify-content: stretch;
+    gap: 5px;
+  }
+  .contenedor-descriptivo {
+    grid-area: contenedor-descriptivo;
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .quienessomos {
+    font-family: "Pantalla mono principal";
+    text-align: center;
+    font-size: 20px;
+  }
+  .textodescriptivo {
+    text-align: justify;
+    font-size: 10px;
+  }
+  .contenedor-logowhatsapp {
+    grid-area: contenedor-logowhatsapp;
+    justify-self: center;
+    align-self: center;
+    margin-right: 20px;
+  }
+  .contenedor-logoinstagram {
+    grid-area: contenedor-logoinstagram;
+    justify-self: center;
+  }
+  .numerodetelefono {
+    grid-area: numerodetelefono;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombredeusuario {
+    grid-area: nombredeusuario;
+    text-decoration: underline;
+    align-self: center;
+    justify-self: center;
+  }
+  a {
+    color: black;
+  }
+  .logowhatsapp {
+    height: 50px;
+  }
+  .logoinstagram {
+    height: 40px;
+  }
+  .footer-inicio {
+    grid-area: footer-inicio;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  .navfooterinicio {
+    color: white;
+    text-align: center;
+  }
+  .contenedor-beneficios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulobeneficios" "beneficio1" "beneficio2";
+    gap: 5px;
+  }
+  .titulobeneficios {
+    grid-area: titulobeneficios;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    padding: 20px;
+    margin: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  .beneficios {
+    color: darkgoldenrod;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+  .beneficio1 {
+    grid-area: beneficio1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .beneficio2 {
+    grid-area: beneficio2;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .titulobeneficio1 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio1 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .titulobeneficio2 {
+    color: darkgoldenrod;
+    font-size: 40px;
+  }
+  .parrafobeneficio2 {
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .listabeneficios {
+    text-align: left;
+  }
+  .contenedor-servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulodeservicios" "imagenservicios";
+    gap: 5px;
+  }
+  .titulodeservicios {
+    grid-area: titulodeservicios;
+    background-color: black;
+    padding: 20px;
+    color: darkgoldenrod;
+    text-align: center;
+    font-size: 80px;
+  }
+  .imagenservicios {
+    grid-area: imagenservicios;
+    height: 500px;
+    align-self: center;
+    justify-self: center;
+    background-color: darkgoldenrod;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .contenedor-padre {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 20%;
+    grid-template-areas: "cortesvillanos cortesvillanos" "cortes lemacortes" "footer footer";
+    gap: 5px;
+  }
+  .lemacortes {
+    grid-area: lemacortes;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-right: 20px;
+  }
+  .lema {
+    font-family: "Sedan SC";
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: black;
+  }
+  .textofooter {
+    color: white;
+    text-align: center;
+  }
+  .navfootercortes {
+    color: white;
+    text-align: center;
+  }
+  .listafooter {
+    list-style-type: none;
+  }
+  .enlacesfooter {
+    color: white;
+  }
+  .contenedorpadre {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "section" "footer";
+    gap: 5px;
+  }
+  .section {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    background-color: darkgoldenrod;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .titulopaginaturnos {
+    grid-area: titulopaginaturnos;
+    text-align: center;
+  }
+  .titulo-turnos {
+    font-family: "Pantalla mono principal";
+    background-color: rgb(248, 248, 248);
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  .nombrecompleto {
+    padding: 20px;
+  }
+  .calendario {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(250, 248, 248);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .calendario1 {
+    color: black;
+    font-size: 20px;
+  }
+  .contenedortitulodehorarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .horariodisponible {
+    font-family: "Pantalla mono principal";
+  }
+  .horariodisponibletitulo {
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .subrayado {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .contenedor-horarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+  }
+  .viñetas {
+    list-style-type: none;
+  }
+  .form-check-label {
+    font-weight: bold;
+    font-size: 15px;
   }
   .contenedor-botonenviar {
     display: flex;

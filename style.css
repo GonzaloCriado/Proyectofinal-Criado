@@ -615,24 +615,12 @@ padding: 50px;
     font-size: 20px;
 }
 .contenedor-horarios{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "columna1 columna2"; */
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap:50%;
 }
-/* .columna1{
-    grid-area: columna1;
-    display: flex;
-    flex-direction: column;
-}
-.columna2{
-    grid-area: columna2;
-    display: flex;
-    flex-direction: column;
-} */
 .viñetas{
     list-style-type: none;
 }
